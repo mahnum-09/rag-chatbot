@@ -1,0 +1,2 @@
+Project: RAG Chatbot
+Status: Initial setup completed
