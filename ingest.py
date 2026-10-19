@@ -10,7 +10,7 @@ with psycopg.connect(
     port=os.getenv("DB_PORT", "5432"),
     dbname=os.getenv("DB_NAME", "resume_chatbot"),
     user=os.getenv("DB_USER", "postgres"),
-    password=os.getenv("1234"),
+    password=os.getenv("DB_PASSWORD", "1234"),
 ) as conn:
     rows = conn.execute("""
         SELECT metadata->>'source' AS source, COUNT(*) AS chunks
